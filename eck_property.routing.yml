@@ -1,0 +1,46 @@
+entity.eck_entity_type.properties:
+  path: '/admin/structure/eck/{eck_entity_type}/properties'
+  defaults:
+    _title: 'Properties'
+    _controller: '\Drupal\eck_property\Controller\EckPropertyController::listing'
+  requirements:
+    _permission: 'administer eck entity types'
+  options:
+    parameters:
+      eck_entity_type:
+        type: entity:eck_entity_type
+
+entity.eck_entity_type.bundles:
+  path: '/admin/structure/eck/{eck_entity_type}/bundles'
+  defaults:
+    _title: 'Bundles'
+    _controller: '\Drupal\Core\Entity\Controller\EntityListController::listing'
+  requirements:
+    _permission: 'administer eck entity types'
+  options:
+    parameters:
+      eck_entity_type:
+        type: entity:eck_entity_type
+
+entity.eck_entity_type.property_add:
+  path: '/admin/structure/eck/{eck_entity_type}/properties/add'
+  defaults:
+    _title: 'Add property'
+    _controller: '\Drupal\eck_property\Controller\EckPropertyController::add'
+  requirements:
+    _permission: 'administer eck entity types'
+  options:
+    parameters:
+      eck_entity_type:
+        type: entity:eck_entity_type
+entity.eck_entity_type.property_add_bulk:
+  path: '/admin/structure/eck/{eck_entity_type}/properties/add-bulk'
+  defaults:
+    _title: 'Add properties'
+    _controller: '\Drupal\eck_property\Controller\EckPropertyController::addBulk'
+  requirements:
+    _permission: 'administer eck entity types'
+  options:
+    parameters:
+      eck_entity_type:
+        type: entity:eck_entity_type

@@ -1,0 +1,10 @@
+<?php
+/**
+ * @file
+ */
+/**
+ * Implement hook_install()
+ */
+function eck_property_install() {
+  module_set_weight('eck_property', 99999);
+}

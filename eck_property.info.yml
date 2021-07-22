@@ -1,0 +1,8 @@
+name: 'ECK Properties'
+type: module
+description: 'Properties ECK contrib module'
+core_version_requirement: ^9
+package: 'Custom'
+dependencies:
+  - eck
+  - entity_property

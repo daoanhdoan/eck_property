@@ -1,0 +1,38 @@
+<?php
+/**
+ *
+ */
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Url;
+use Drupal\eck_property\EckPropertyEntityTypeInfo;
+
+/**
+ * Implements @see hook_link_alter().
+ * Add tab with custom title and link only to pages of a selected content type
+ */
+function eck_property_link_alter(&$variables) {
+  /** @var \Drupal\Core\Url $url */
+  $url = $variables['url'];
+  if ($url->isRouted() && strpos($url->getRouteName(), 'property_add') !== FALSE) {
+    $variables['options']['query']['destination'] = Url::fromRoute('<current>')->toString();
+  }
+}
+
+/**
+ * Implements hook_entity_type_alter().
+ */
+function eck_property_entity_type_alter(array &$entity_types) {
+  return \Drupal::service('class_resolver')
+    ->getInstanceFromDefinition(EckPropertyEntityTypeInfo::class)
+    ->entityTypeAlter($entity_types);
+}
+
+/**
+ * Implements hook_entity_operation().
+ */
+function eck_property_entity_operation(EntityInterface $entity) {
+  return \Drupal::service('class_resolver')
+    ->getInstanceFromDefinition(EckPropertyEntityTypeInfo::class)
+    ->entityOperation($entity);
+}

@@ -1,0 +1,12 @@
+entity.eck_entity_type.property_add:
+  route_name: entity.eck_entity_type.property_add
+  title: 'Add entity property'
+  weight: 10
+  appears_on:
+    - entity.eck_entity_type.properties
+entity.eck_entity_type.property_add_bulk:
+  route_name: entity.eck_entity_type.property_add_bulk
+  title: 'Add entity properties'
+  weight: 10
+  appears_on:
+    - entity.eck_entity_type.properties
