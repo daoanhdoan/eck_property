@@ -1,19 +1,9 @@
 {
-    "name": "daoanhdoan/eck_property",
-    "description": "Drupal custom module.",
-    "type": "drupal-custom-module",
-    "license": "AGPL-3.0",
-    "version": "1.0.0",
-    "authors": [
-        {
-            "name": "Anh Doan",
-            "role": "Product Manager"
-        }
-    ],
-    "extra": {
-        "installer-name": "eck_property"
-    },
-    "require": {
-        "daoanhdoan/entity_property": "*"
-    }
+  "name": "daoanhdoan/eck_property",
+  "description": "ECK Properties - Properties ECK contrib module",
+  "type": "drupal-custom-module",
+  "license":"GPL-2.0",
+  "extra": {
+    "installer-name": "eck_property"
+  }
 }
