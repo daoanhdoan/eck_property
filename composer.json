@@ -1,13 +1,13 @@
 {
-    "name": "daoanhdoan/eck_property",
+    "name" : "daoanhdoan/eck_property",
     "description": "ECK Properties - Properties ECK contrib module",
-    "type": "drupal-custom-module",
+    "type" : "drupal-custom-module",
     "license": "GPL-2.0+",
     "extra": {
         "installer-name": "eck_property"
     },
     "require": {
         "drupal/eck": "*",
-        "drupal/entity_property": "*"
+        "daoanhdoan/entity_property": "*"
     }
 }
