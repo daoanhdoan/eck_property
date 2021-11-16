@@ -9,5 +9,11 @@
     "require": {
         "drupal/eck": "*",
         "drupal/entity_property": "*"
+<<<<<<< HEAD
     }
 }
+=======
+    },
+    "minimum-stability": "dev"
+}
+>>>>>>> cf76e188b6fa8befe8075777a0110cea2cede613
