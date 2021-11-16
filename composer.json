@@ -8,7 +8,7 @@
     },
     "require": {
         "drupal/eck": "*",
-        "drupal/entity_property": "*"
+        "daoanhdoan/entity_property": "*"
 
     },
     "minimum-stability": "dev"
