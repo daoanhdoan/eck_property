@@ -8,6 +8,6 @@
     },
     "require": {
         "drupal/eck": "*",
-        "daoanhdoan/entity_property": "*"
+        "drupal/entity_property": "*"
     }
 }
